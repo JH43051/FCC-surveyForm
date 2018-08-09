@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form | Responsive Web Design Projects</title>
+  <link rel="stylesheet" href="surveyForm.css">
+  <!-- <script src="testing.js"></script> -->
+</head>
+
+<body>
+  <h1 id="title">FCC - Survey Form</h1>
+
+  <div id="survey-block">
+    <p id="description">A short survey for new coders...</p>
+
+      <form id="survey-form">
+        <div id=form-container>
+          <label id="name-label" for="name" class="prompts">* Name:</label>
+          <input id="name" class="inputs" name="name" type="text-field" placeholder="Enter your name." required autofocus>
+
+          <label id="number-label" for="number" class="prompts">* Age:</label>
+          <input id="number" class="inputs" name="number" type="number" placeholder="Enter your age" min="8" max="110" required>
+
+          <label id="email-label" for="email" class="prompts">* Email:</label>
+          <input id="email" class="inputs" name="email" type="email" placeholder="Enter our email" required>
+
+          <label id="dropdown-label" for="dropdown" class="prompts">Which language were you most interested in when you started coding?</label>
+          <select id="dropdown" name="dropdown" class="inputs">
+            <option disabled value>Select an option</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <p id="radio-descript" class="prompts">Which options best describe how you use your time programming?</p>
+          <fieldset id="studying" class="inputs">
+            <legend>Hours per week studying:</legend>
+            <label for="none-study">0 - 10</label>
+            <input id="none-study" name="study" type="radio" value="1" selected>
+            <br>
+            <label for="ten-study">10 - 20</label>
+            <input id="ten-study" name="study" type="radio" value="2">
+            <br>
+            <label for="twenty-study">20 - 40</label>
+            <input id="twenty-study" name="study" type="radio" value="3">
+            <br>
+            <label for="forty-study">40+</label>
+            <input id="forty-study" name="study" type="radio" value="4">
+            <br>
+          </fieldset>
+
+          <fieldset id="working" class="inputs">
+            <legend>Hours per week coding:</legend>
+            <label for="none-work">0 - 10</label>
+            <input id="none-work" name="work" type="radio" value="1" selected>
+            <br>
+            <label for="ten-work">10 - 20</label>
+            <input id="ten-work" name="work" type="radio" value="2">
+            <br>
+            <label for="twenty-work">20 - 40</label>
+            <input id="twenty-work" name="work" type="radio" value="3">
+            <br>
+            <label for="forty-work">40+</label>
+            <input id="forty-work" name="work" type="radio" value="4">
+            <br>
+          </fieldset>
+
+          <p id="checks-descript" class="prompts">Check all the resources that you use to learn:</p>
+          <fieldset id="resources" class="inputs">
+            <label for="uni-label">University or College</label>
+            <input id="uni" type="checkbox" name="resources" value="University/College">
+            <br>
+            <label for="camp-label">Coding Camp</label>
+            <input id="camp" type="checkbox" name="resources" value="Coding Camp">
+            <br>
+            <label for="books-label">Books</label>
+            <input id="books" type="checkbox" name="resources" value="Books">
+            <br>
+            <label for="tuts-label">Online Tutorials</label>
+            <input id="tuts" type="checkbox" name="resources" value="Online Tutorials">
+            <br>
+            <label for="groups-label">Study Groups</label>
+            <input id="groups" type="checkbox" name="resources" value="Study Groups">
+            <br>
+            <label for="mentors-label">Mentors</label>
+            <input id="mentors" type="checkbox" name="resources" value="Mentors">
+            <br>
+          </fieldset>
+
+          <label id="comments-label" for="comments" class="prompts">Please describe your experiences so far as a new programmer:</label>
+          <textarea id="comments" class="inputs" name="comments" placeholder="Enter your comments here..."></textarea>
+
+        </div> <!-- form-container -->
+        <input id="submit" type="submit" value="Submit">
+      </form> <!-- survey-form -->
+  </div> <!-- survey-block -->
+</body>
+</html>

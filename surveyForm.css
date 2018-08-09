@@ -1,0 +1,66 @@
+/* surveyForm.css */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+body {
+  text-align: center;
+  background: linear-gradient(35deg, #ccffff, #ffcccc);
+  font-family: Raleway, Helvetica, sans-serif;
+}
+
+fieldset {
+  text-align: right;
+}
+
+#survey-block {
+  max-width: 1000px;
+  display: block;
+  height: auto;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#number {
+  width: 120px;
+}
+
+#description {
+  font-size: 1.4em;
+}
+
+#survey-block p {
+  padding: 20px;
+}
+
+#form-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+}
+
+#radio-descript {
+  grid-row:5 / 7;
+}
+
+#submit {
+  margin: 20px;
+}
+
+#comments {
+  width: 75%;
+  height: 100px;
+}
+
+.prompts {
+  justify-self: end;
+  padding: 5px 5px 5px 200px;
+  text-align: right;
+}
+
+.inputs {
+  justify-self: start;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  padding: 5px;
+}
